@@ -9,7 +9,7 @@
     height: 4rem;
 }
 .navbar-nav{
-    width: 30%;
+    width: 40%;
 }
 .nav-item {
     color: #ba2779 !important;
@@ -25,13 +25,8 @@
     color: white;
 }
 
-.discounts {
-    width: 30%;
-}
-
 .short-brief {
     width: 100%;
-    height: 20rem;
     background: linear-gradient(135deg, #ba2779, #874697);
 }
 
@@ -39,7 +34,7 @@
     margin-top: 1rem;
 }
 
-.ourCards {
+/* .ourCards {
     color: #ba2779;
     font-weight: 500;
 }
@@ -57,9 +52,27 @@
 }
 
 .percentage-number {
-    width: 80%;
+    width: 50%;
+} */
+
+.ourMessage-img{
+    width: 13rem;
+    height: 13rem;
+}
+.ourMessage{
+    padding: 0px 1rem;
 }
 
+.purple-text{
+    color: #ba2779;
+}
+.features-img{
+    width: 40%;
+}
+.sub-feature-img{
+    width: 11rem;
+    height: 11rem;
+}
 h5 {
     margin: 1rem;
 }
@@ -68,4 +81,25 @@ footer {
     margin-top: 1rem;
     background: linear-gradient(135deg, #ba2779, #874697);
     height: 6rem;
+}
+@media (min-width: 390px) { 
+    .aimAndMessage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aimAndMessage .ourMessage h1{
+        text-align: center;
+    }
+}
+@media (min-width: 768px) { 
+    .aimAndMessage{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .aimAndMessage .ourMessage h1{
+        text-align: start;
+    }
 }
